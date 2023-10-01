@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Playfair+Display&family=Yanone+Kaffeesatz&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h2, h4,  h5, h6 {
+    font-family: 'Jost', sans-serif;
+  }
+
+  header{
+    font-family: 'Playfair Display', serif;
+  }
+
+  p, h3, a, button, span{
+    font-family: 'Oswald', sans-serif;
+  }
+ 
+ 
+  .Container {
+    @apply w-full py-20 grid place-items-center h-full px-32;
+  }
+  .activeBtn {
+    @apply border-2 sm:border-none  sm:rounded-none rounded-md  sm:bg-gray-200 shadow-lg sm:shadow-none  sm:w-56 sm:text-left   py-2 px-4 cursor-pointer text-Red text-lg font-extrabold sm:font-semibold;
+  }
+
+  .btn {
+    @apply border-2 sm:border-none sm:rounded-none rounded-md sm:py-0 sm:px-4 px-3 py-2 text-lg bg-transparent font-semibold sm:font-normal  cursor-pointer text-center;
+  }
+  .activeTab {
+    @apply bg-glass flex items-center gap-2 py-1 px-4 rounded-2xl
+  }
+  .tab {
+    @apply py-1 px-2  flex items-center gap-2 
+  }
+  .primarybtn {
+    @apply border rounded-md ring-1 px-1  bg-transparent cursor-pointer;
+  }
+  .flexBox {
+    @apply flex items-center justify-between;
+  }
+
+  .FlexRow {
+    @apply flex items-center;
+  }
+
+  .FlexCol {
+    @apply flex flex-col gap-y-2 mb-2;
+  }
+
+  .Nav {
+    @apply  px-2 sm:px-6 lg:px-16 w-full h-20 z-40;
+  }
+  
+  .nav-items {
+    @apply lg:flex items-center gap-9 text-xl cursor-pointer capitalize text-slate-600 hidden font-medium z-50;
+  }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 1rem;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: #f3f3f3;
+  display: none;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  border-radius: 40px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  border: 5px solid transparent;
+}
+
+
+.motor {
+  animation: van 4s infinite 3s;
+}
+@keyframes van {
+  from {
+    transform: translateX(1px);
+  }
+  to {
+    transform: translateX(380px);
+  }
+}
