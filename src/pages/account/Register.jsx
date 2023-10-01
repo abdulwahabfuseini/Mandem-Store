@@ -58,7 +58,7 @@ const Register = () => {
           });
         }
       );
-      navigate("/checkout", { replace: true });
+      navigate("/cart", { replace: true });
       message.success("Successfully Logged in")
     } catch (error) {
       toast.error("Ooops!!! failed to create an account", {
