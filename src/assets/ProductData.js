@@ -84,7 +84,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -92,7 +92,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2488,7 +2488,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2496,7 +2496,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2538,7 +2538,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2546,7 +2546,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2588,7 +2588,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2596,7 +2596,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2638,7 +2638,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2646,7 +2646,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2656,7 +2656,7 @@ export const AllProducts = [
   {
     id: 55,
     name: "PlayStation6",
-    cover: "Ps5.png",
+    cover: "ps5.png",
     price: 400,
     review: 23,
     rate: 3,
@@ -2688,7 +2688,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2696,7 +2696,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2706,7 +2706,7 @@ export const AllProducts = [
   {
     id: 56,
     name: "PlayStation7",
-    cover: "Ps6.png",
+    cover: "ps6.png",
     price: 400,
     review: 23,
     rate: 4,
@@ -2738,7 +2738,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2746,7 +2746,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2757,7 +2757,7 @@ export const AllProducts = [
   {
     id: 57,
     name: "PlayStation8",
-    cover: "Ps7.png",
+    cover: "ps7.png",
     price: 400,
     review: 23,
     rate: 3.5,
@@ -2789,7 +2789,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2797,7 +2797,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2839,7 +2839,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2847,7 +2847,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -2889,7 +2889,7 @@ export const AllProducts = [
       {
         id: 4,
         name: "PlayStation6",
-        cover: "Ps5.png",
+        cover: "ps5.png",
         price: 400,
         review: 23,
         rate: 3,
@@ -2897,7 +2897,7 @@ export const AllProducts = [
       {
         id: 5,
         name: "PlayStation7",
-        cover: "Ps6.png",
+        cover: "ps6.png",
         price: 400,
         review: 23,
         rate: 4,
@@ -3854,13 +3854,13 @@ export const PlayStation = [
   {
     id: 113,
     name: "PlayStation6",
-    cover: "Ps5.png",
+    cover: "ps5.png",
     price: 400,
   },
   {
     id: 114,
     name: "PlayStation7",
-    cover: "Ps6.png",
+    cover: "ps6.png",
     price: 400,
   },
   {
@@ -3872,7 +3872,7 @@ export const PlayStation = [
   {
     id: 116,
     name: "PlayStation8",
-    cover: "Ps7.png",
+    cover: "ps7.png",
     price: 400,
   },
   {
