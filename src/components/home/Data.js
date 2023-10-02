@@ -187,7 +187,7 @@ export const ArrivalProducts = [
     id: 6,
     name: "Watch",
     price: 325,
-    cover: "w4.png",
+    cover: "W4.png",
   },
   {
     id: 8,

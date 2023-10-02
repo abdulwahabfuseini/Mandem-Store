@@ -2,10 +2,21 @@ import { Alert, AlertTitle, Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
+import { useDispatch } from "react-redux";
+import { CartActions } from "../../Store/cartSlice";
+
 
 const Confirmation = () => {
   const navigate = useNavigate();
   const {currentUser} = useAuth()
+  const dispatch = useDispatch();
+
+
+  
+  const ClearCart = () => {
+    dispatch(CartActions.clearCart());
+    navigate("/", { replace: true })
+  };
 
   return (
     <div className="grid place-items-center py-10">
@@ -26,7 +37,7 @@ const Confirmation = () => {
             borderRadius: "4px",
             marginTop: "18px"
           }}
-          onClick={() => navigate("/", { replace: true })}
+          onClick={ClearCart}
         >
           Back to home
         </Button>
