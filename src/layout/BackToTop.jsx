@@ -21,7 +21,7 @@ const BackToTop = () => {
       {backTo && (
         <button
           onClick={() => scrollToTop()}
-          className="fixed bottom-5 right-24 rounded-full z-30 bg-white border-2 border-Header p-2 font-bold shadow-lg transition-all duration-200 hover:ring-4 hover:ring-green-100"
+          className="fixed p-2 font-bold transition-all duration-200 bg-white border-2 rounded-full shadow-lg bottom-20 sm:bottom-5 right-24 border-Header hover:ring-4 hover:ring-green-100"
         >
           <CgChevronDoubleUp className="w-8 h-8" />
         </button>

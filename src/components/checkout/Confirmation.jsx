@@ -12,7 +12,6 @@ const Confirmation = () => {
   const dispatch = useDispatch();
 
 
-  
   const ClearCart = () => {
     dispatch(CartActions.clearCart());
     navigate("/", { replace: true })

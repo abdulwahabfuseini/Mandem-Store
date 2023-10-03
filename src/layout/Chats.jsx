@@ -27,7 +27,7 @@ const Chat = () => {
       {contact && (
         <button
           onClick={() => setIcon(!icon)}
-          className="fixed z-50 p-4 text-white bg-blue-800 rounded-full bottom-4 right-4"
+          className="fixed z-50 p-4 text-white bg-blue-800 rounded-full bottom-20 sm:bottom-5 right-4"
         >
           {icon ? <Close onClick={() => setIcon(false)} /> : <Message />}
         </button>
@@ -170,15 +170,23 @@ const Chat = () => {
                     soluta porro voluptatibus modi minus magni itaque?
                   </p>
                 </div>
-              </div>
-              <div
-                className={`${
-                  toggleTab === 2 ? "block" : "hidden"
-                } bottom-0 left-0 fixed right-0 w-full y-2 text-black`}
-              >
-                <div className="z-20 flex items-center justify-between w-full p-2 bg-white border-t border-blue-600 shadow-md">
-                  <input type="text" />
-                  <FaSearch />
+                <div className="p-4 bg-white border border-gray-300 rounded shadow-sm">
+                  <h2>Help Question</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus eveniet delectus quaerat libero eos, nesciunt
+                    tempore deleniti non cupiditate ducimus pariatur voluptatum
+                    soluta porro voluptatibus modi minus magni itaque?
+                  </p>
+                </div>
+                <div className="p-4 bg-white border border-gray-300 rounded shadow-sm">
+                  <h2>Help Question</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus eveniet delectus quaerat libero eos, nesciunt
+                    tempore deleniti non cupiditate ducimus pariatur voluptatum
+                    soluta porro voluptatibus modi minus magni itaque?
+                  </p>
                 </div>
               </div>
             </div>

@@ -54,7 +54,7 @@ const SingleProduct = () => {
             <div className="space-x-4 ">
               <Button
                 onClick={AddToCart}
-                className="w-40 h-10 text-lg text-white rounded-3xl bg-Red"
+                className="w-32 h-10 text-lg text-white sm:w-40 rounded-3xl bg-Red"
               >
                 AddToCart
               </Button>

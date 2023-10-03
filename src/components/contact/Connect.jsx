@@ -14,7 +14,7 @@ const Connect = ({ message }) => {
         <div className=" sm:col-span-1 lg:col-span-2">
           <iframe
             title="Locate Us"
-            height="400"
+            height="500"
             frameborder="0"
             scrolling="no"
             marginheight="0"

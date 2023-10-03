@@ -141,7 +141,7 @@ const Footer = () => {
                 <Tooltip color={media?.color} title={media?.title}  key={media.id}>
                   <a href={media?.link} target="blank">
                     <img
-                      className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110"
+                      className="w-12 h-12 p-1 rounded-full sm:h-11 sm:w-11 bg-slate-100 lg:hover:scale-110"
                       src={`/images/social/${media.imgUrl}`}
                       alt="social"
                     />
@@ -164,41 +164,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// {
-//   /* <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/facebookf.png" alt="social" /></Typography>
-
-// <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/googlesvg.png" alt="social" /></Typography>
-// <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/insta.png" alt="social" /></Typography>
-// <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/githubsvg.png" alt="social" /></Typography>
-// <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-1 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/linkedin.png" alt="social" /></Typography>
-// <Typography sx={{ "&:hover" : {cursor: "pointer"}}} fontSize="17px"> <img  className="p-2 rounded-full h-11 w-11 bg-slate-100 lg:hover:scale-110" src="/images/social/whatsapp.png" alt="social" /></Typography> */
-// }
-
-// <Tooltip
-// title={media.title}
-// placement="top"
-// arrow
-// PopperProps={{
-//   popperRef,
-//   anchorEl: {
-//     getBoundingClientRect: () => {
-//       return new DOMRect(
-//         positionRef.current.x,
-//         areaRef.current.getBoundingClientRect().y,
-//         0,
-//         0
-//       );
-//     },
-//   },
-// }}
-// >
-// <Box
-//   ref={areaRef}
-//   onMouseMove={handleMouseMove}
-//   sx={{ "&:hover": { cursor: "pointer" } }}
-//   fontSize="17px"
-// >
-
-// </Box>
-// </Tooltip>

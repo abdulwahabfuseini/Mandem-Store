@@ -4,7 +4,8 @@ import TextArea from "antd/es/input/TextArea";
 import React, { useState } from "react";
 
 const ContactForm = () => {
-  const [form, setForm] = useState({
+  const [form] = Form.useForm();
+  const [contact, setContact] = useState({
     email: "",
     PhoneNumber: 0,
     Message: "",
@@ -14,7 +15,7 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    setContact({ ...contact, [name]: value });
   };
 
   const handleSubmit = (values) => {
@@ -24,9 +25,9 @@ const ContactForm = () => {
         "service_hc4os5t",
         "template_mnp1bqq",
         {
-          email: form.email,
-          PhoneNumber: form.PhoneNumber,
-          Message: form.Message,
+          email: contact.email,
+          PhoneNumber: contact.PhoneNumber,
+          Message: contact.Message,
         },
         "9vSC2INYrwofrkKDo"
       )
@@ -36,7 +37,8 @@ const ContactForm = () => {
           alert(
             "Thanks for contacting ManDem Accessories, we will get black to you as soon as possible. Stay Bless!!!"
           );
-          setForm();
+          setContact();
+          form.resetFields();
         },
         (error) => {
           setLoading(false);
@@ -46,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Form onFinish={handleSubmit} className="py-6">
+    <Form onFinish={handleSubmit} form={form} className="py-6">
       <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-x-2">
         <Form.Item
           name="email"
@@ -60,7 +62,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             placeholder="Eg: myname@gmail.com"
-            className="rounded-3xl h-12 px-5 border-2 border-slate-600 text-lg"
+            className="h-12 px-5 text-lg border-2 rounded-lg lg:rounded-xl border-slate-600"
             onChange={handleChange}
           />
         </Form.Item>
@@ -76,7 +78,7 @@ const ContactForm = () => {
             type="tel"
             name="PhoneNumber"
             placeholder="(000) 000 000 0000"
-            className="rounded-3xl h-12 px-5 border-2 border-slate-600 text-lg"
+            className="h-12 px-5 text-lg border-2 rounded-lg lg:rounded-xl border-slate-600"
             onChange={handleChange}
           />
         </Form.Item>
@@ -89,13 +91,13 @@ const ContactForm = () => {
           type="text"
           name="Message"
           placeholder="Enter Message"
-          className="p-5 border-2 border-slate-600 text-lg"
+          className="p-5 text-lg border-2 border-slate-600"
           onChange={handleChange}
         />
       </Form.Item>
       <Button
         htmlType="submit"
-        className="bg-Red text-white rounded-3xl hover:bg-white w-28 h-10 text-lg hover:shadow-md mt-2"
+        className="h-10 mt-2 text-lg text-white bg-Red rounded-3xl hover:bg-white w-28 hover:shadow-md"
       >
         {loading ? <h1>Sending...</h1> : "Submit"}
       </Button>

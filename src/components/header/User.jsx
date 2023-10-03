@@ -81,8 +81,6 @@ const User = () => {
               <span className="flex items-center gap-3">
                 <RiUserSettingsLine className="w-6 h-6 sm:h-8 sm:w-8 text-slate-600" />
                 <button
-                  disabled={loading}
-                  onClick={handleLogout}
                   className="sm:text-lg"
                 >
                   Update Profile
@@ -91,7 +89,7 @@ const User = () => {
               <span className="flex items-center gap-3">
                 <GiShoppingCart className="w-6 h-6 sm:h-8 sm:w-8 text-slate-600" />
                 <Link to="/cart">
-                  <button disabled={loading} className="sm:text-lg">
+                  <button  className="sm:text-lg">
                     Shopping Cart
                   </button>
                 </Link>
@@ -99,8 +97,6 @@ const User = () => {
               <span className="flex items-center gap-3">
                 <PiSealQuestionBold className="w-6 h-6 sm:h-8 sm:w-8 text-slate-600" />
                 <button
-                  disabled={loading}
-                  onClick={handleLogout}
                   className="sm:text-lg"
                 >
                   Help & Support
