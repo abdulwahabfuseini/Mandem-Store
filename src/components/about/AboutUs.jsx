@@ -2,12 +2,12 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-full px-2 sm:py-16 sm:px-6 lg:px-8 py-16">
-       <h1 className="text-xl text-Red">Welcome to Mandem</h1>
-      <div className="flex items-center justify-center flex-col sm:flex-row gap-y-8 gap-x-10">
-        <div className="sm:w-1/2 w-full">
-        <h3 className="text-3xl sm:text-4xl lg:text-6xl py-6">Who We Are</h3>
-          <div className=" space-y-5 w-full text-justify tracking-tighter">
+    <div className="w-full h-full px-2 py-16 sm:py-16 sm:px-6 lg:px-8">
+       <h1 className="text-2xl text-Red">Welcome to Mandem</h1>
+      <div className="flex flex-col items-center justify-center sm:flex-row gap-y-8 gap-x-10">
+        <div className="w-full sm:w-1/2">
+        <h3 className="py-6 text-3xl sm:text-4xl lg:text-6xl">Who We Are</h3>
+          <div className="w-full space-y-5 text-xl break-word">
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
             veritatis perferendis culpa tempore rem praesentium necessitatibus
@@ -25,7 +25,7 @@ const AboutUs = () => {
           </h2>
           </div>
         </div>
-        <div className="sm:w-1/2 w-full">
+        <div className="w-full sm:w-1/2">
           <img src="/images/about.jpg" alt="" />
         </div>
       </div>

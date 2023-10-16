@@ -14,7 +14,7 @@ const Footer = () => {
               <header className="text-2xl text-Red">MANDEM STORE</header>
             </Link>
           </Typography>
-          <Typography>
+          <Typography className="break-all text-lg">
             Lorem ipsum dolor sit amet consect, adipisicing elit. Dolores
             perferendis tenetur vitae labore odio unde quo aliquam exceptur
           </Typography>

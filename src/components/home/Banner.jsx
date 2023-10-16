@@ -15,7 +15,7 @@ const Banner = ({ item }) => {
         <h1 className="font-extrabold text-white text-[12vw] uppercase -mt-[3vw]">
           {item?.category}
         </h1>
-        <button className="p-2 text-sm text-white w-36 sm:w-48 sm:px-6 sm:text-lg sm:py-3 bg-Red rounded-3xl">
+        <button className="p-2 text-sm text-white w-36 sm:w-48 sm:px-4 sm:text-lg sm:py-3 bg-Red rounded-3xl">
           <Link to="/products">{item?.button}</Link>
         </button>
       </Col>
