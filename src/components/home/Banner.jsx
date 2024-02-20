@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Banner = ({ item }) => {
   return (
-    <Row className="relative grid w-full h-full px-2 pt-20 pb-12 bg-gray-200 rounded-2xl md:py-28 lg:py-44 place-content-center">
+    <Row className="relative grid w-full h-full px-2 sm:px-4 pt-20 pb-12 bg-gray-200 rounded-2xl md:py-28 lg:py-44 place-content-center">
       <Col data-aos="fade-right">
         <h1 className="text-xl sm:text-3xl">{item?.title}</h1>
         <p className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-8xl">

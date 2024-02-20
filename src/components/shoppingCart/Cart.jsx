@@ -40,7 +40,7 @@ const Cart = () => {
 
   return (
     <>
-      {currentUser ? (
+      {!currentUser ? (
         <Layout>
           <HeadTitle />
           <div className="flex flex-col px-2 py-20 w-fu-ll sm:px-6 lg:px-3 gap-x-10 sm:mx-auto sm:max-w-6xl lg:py-12 gap-y-6 lg:flex-row">
@@ -99,8 +99,9 @@ const Cart = () => {
                   }
                   onConfirm={ClearCart}
                   onCancel={cancel}
-                  okText="Yes"
-                  cancelText="No"
+                  color="#F1E6E6"
+                  okText="Confirm"
+                  cancelText="Cancel"
                 >
                   <Button
                     danger

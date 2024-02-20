@@ -13,54 +13,41 @@ const SingleProduct = () => {
   const { productId } = useParams();
   const device = AllProducts.find((device) => device.name === productId);
 
-  const { id, name, cover, price, rate, review } = device;
+  const { id, name, cover, price, rate, review, description, condition } = device;
 
   const AddToCart = () => {
     dispatch(CartActions.addToCart({ id, name, cover, price }));
-    message.success("Device Added to Cart");
+    message.success(`${name} Added to Cart`);
   };
 
   return (
     <Layout>
-      <div className="relative grid px-3 py-6 overflow-hidden place-items-center sm:px-8 lg:px-6 gap-y-14">
-        <div className="grid lg:grid-cols-2 place-items-center gap-y-6 lg gap-x-6 ">
+      <div className="relative grid px-3 py-14 overflow-hidden place-items-center sm:px-8 lg:px-6 gap-y-14 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2  gap-y-6 lg gap-x-10 ">
           <div className="p-10 bg-gray-200" data-aos="fade-right">
             <img
               src={`/images/${cover}`}
               alt={name}
-              className="object-contain lg:w-[500px] lg:h-[500px]"
+              className="object-contain lg:w-[500px] lg:h-[350px] hover:scale-x-105"
             />
           </div>
-          <div className="space-y-6" data-aos="fade-left">
+          <div className="space-y-2" data-aos="fade-left">
             <h1 className="text-2xl font-semibold sm:text-3xl">{name}</h1>
+            <Typography className="w-full text-lg tracking-tighter text-justify lg:w-11/12">
+              {description}
+            </Typography>
             <Rating rate={rate} review={review} />
             <Typography className="text-xl font-medium text-Red">
-              Unit Price: GH₵: {price.toLocaleString()}.00
+              Unit Price:  GH₵: {price.toLocaleString()}
             </Typography>
-            <Typography className="w-full text-lg tracking-tighter text-justify lg:w-11/12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              rem sint officia, asperiores minus placeat eum? At, dignissimos
-              possimus! Amet distinctio eveniet, quia dolor, quae vel aperiam
-              eaque, minima voluptatibus dolorem odio debitis voluptatem dolorum
-              doloremque velit sapiente mollitia corrupti accusamus aliquam
-              quidem corporis accusantium cum dignissimos aut. Dolorem iusto
-              voluptatibus, id vitae iste explicabo delectus sapiente aliquid
-              debitis cupiditate quisquam sint rem sunt dicta sed deleniti nisi
-              eveniet! Quaerat ipsam quod perspiciatis quas temporibus rem optio
-              eum consectetur, assumenda distinctio, quam unde hic voluptatibus
-              vitae ducimus? Cum officia voluptas beatae ducimus illum fugiat
-              quam veritatis, quas voluptatem. Temporibus, ratione.
-            </Typography>
-            <div className="space-x-4 ">
+            <p className="text-xl">Condition: {condition}</p>
+            <div className="space-x-4">
               <Button
                 onClick={AddToCart}
-                className="w-32 h-10 text-lg text-white sm:w-40 rounded-3xl bg-Red"
+                className="w-32 h-10 text-lg text-white sm:w-40 rounded-3xl bg-Red mt-12"
               >
                 AddToCart
               </Button>
-              {/* <Button className="w-20 h-10 text-lg text-white rounded-3xl bg-slate-900">
-                Shop
-              </Button> */}
             </div>
           </div>
         </div>

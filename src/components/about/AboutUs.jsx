@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-full px-2 py-16 sm:py-16 sm:px-6 lg:px-8">
+    <div className="w-full h-full px-2 py-16 sm:py-16 sm:px-6 lg:px-8 max-w-7xl mx-auto">
        <h1 className="text-2xl text-Red">Welcome to Mandem</h1>
       <div className="flex flex-col items-center justify-center sm:flex-row gap-y-8 gap-x-10">
         <div className="w-full sm:w-1/2">

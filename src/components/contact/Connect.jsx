@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Connect = ({ message }) => {
   return (
-    <div>
+    <div className=" max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-3 gap-y-6 sm:gap-x-4 lg:gap-x-16">
         <div className="cols-span-1">
           <h4 className="text-xl text-Red">{message?.title}</h4>
@@ -29,9 +29,9 @@ const Connect = ({ message }) => {
         </div>
       </div>
 
-      <div className="grid py-10 my-6 bg-white sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 sm:place-items-center gap-y-6">
+      <div className="grid py-10 my-6 bg-white sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-2 sm:place-items-center gap-y-6">
         {message.connects.map((item, index) => (
-          <div key={index} className="flex items-center gap-3 px-4 sm:justify-center" data-aos="fade-up">
+          <div key={index} className="flex items-center gap-3 px-3 sm:justify-center" data-aos="fade-up">
             <img
               src={`/images/SVG/${item?.cover}`}
               alt=""

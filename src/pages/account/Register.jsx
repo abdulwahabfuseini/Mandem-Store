@@ -90,13 +90,12 @@ const Register = () => {
                   required: true,
                   message: "Please Enter Username",
                 },
-                { type: "text" },
               ]}
               hasFeedback
             >
               <Input
                 type="text"
-                placeholder="Enter Email Address"
+                placeholder="Enter Username"
                 className="h-12 cursor-pointer"
                 onChange={(e) => setData(e.target.value)}
               />
@@ -205,7 +204,7 @@ const Register = () => {
             </Button>
             <Link to="/signin">
               <h1 className="py-6 text-lg text-center cursor-pointer text-md hover:underline">
-                Already have an account? <span>Sign up</span>
+                Already have an account? <span>Sign In</span>
               </h1>
             </Link>
           </Form>

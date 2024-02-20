@@ -23,11 +23,11 @@ const Navbar = () => {
     <div
       className={`${
         sticky
-          ? "top-0 left-0 fixed bg-white  py-4 border-b border-gray-300"
-          : "bg-slate-100 py-6"
-      } Nav`}
+          ? "top-0 left-0 fixed bg-white w-full py-3 border-b border-gray-300 z-50"
+          : "bg-slate-100 py-4 "
+      }`}
     >
-      <nav className="flexBox">
+      <nav className="flexBox Nav">
         <ul className="gap-12 FlexRow">
           <Link to="/">
             <header className="text-2xl sm:text-4xl text-Red">MANDEM</header>

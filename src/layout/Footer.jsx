@@ -6,17 +6,18 @@ import { Tooltip } from "antd";
 
 const Footer = () => {
   return (
-    <div className="pt-6 mt-24 overflow-hidden text-white border-t-2 shadow-lg bg-Text sm:bg-white sm:text-Text">
-      <div className="grid w-full h-full px-5 mb-12 gap-x-8 sm:px-8 grid-auto-fit-xs gap-y-5 sm:place-items-center">
+    <div className="pt-6 mt-24 overflow-hidden text-white border-t-2 shadow-lg bg-Text sm:bg-white sm:text-Text ">
+      <div className="grid w-full h-full px-5 mb-12 gap-x-8 sm:px-8 grid-auto-fit-xs gap-y-5 sm:place-items-center max-w-7xl mx-auto">
         <div className="space-y-2" data-aos="fade-right">
           <Typography variant="h5" color="red" data-aos="fade-up">
             <Link to="/">
               <header className="text-2xl text-Red">MANDEM STORE</header>
             </Link>
           </Typography>
-          <Typography className="break-all text-lg">
-            Lorem ipsum dolor sit amet consect, adipisicing elit. Dolores
-            perferendis tenetur vitae labore odio unde quo aliquam exceptur
+          <Typography className="break-word text-lg">
+            Got questions? Send us a message on Whatsapp!- This number supports
+            only messages no calls. <br />{" "}
+            <a href="tel:0334786495">+233 33 478 6495</a>
           </Typography>
         </div>
         <div className="space-y-2" data-aos="fade-up">
@@ -138,7 +139,11 @@ const Footer = () => {
           <div className="flex flex-wrap gap-3 py-4">
             {Socialconnect.map((media) => (
               <Typography key={media.id}>
-                <Tooltip color={media?.color} title={media?.title}  key={media.id}>
+                <Tooltip
+                  color={media?.color}
+                  title={media?.title}
+                  key={media.id}
+                >
                   <a href={media?.link} target="blank">
                     <img
                       className="w-12 h-12 p-1 rounded-full sm:h-11 sm:w-11 bg-slate-100 lg:hover:scale-110"
@@ -152,8 +157,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-2 py-6 leading-8 text-center text-white border-t-4 sm:px-6 bg-Text" >
-        <h4 className="text-lg" >
+      <div className="px-2 py-6 leading-8 text-center text-white border-t-4 sm:px-6 bg-Text">
+        <h4 className="text-lg">
           {" "}
           &copy; 2023 Mandem Store, All rights reserved
         </h4>

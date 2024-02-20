@@ -18,7 +18,7 @@ const CartItems = ({ id, name, price, cover, totalPrice, quantity }) => {
 
   const DltCartItem = () => {
     dispatch(CartActions.deleteFromCart(id));
-    message.success("Device Remove Form Cart");
+    message.success(`${name} Remove Form Cart`);
   };
 
   return (

@@ -115,7 +115,7 @@ const SignIn = () => {
             </Button>
             <Link to="/create-an-account">
               <h1 className="py-6 text-lg text-center cursor-pointer hover:underline">
-                Don't have an account yet? <span>Sign up</span>
+                Don't have an account yet? <span>Sign Up</span>
               </h1>
             </Link>
           </Form>

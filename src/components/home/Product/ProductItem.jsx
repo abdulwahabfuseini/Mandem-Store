@@ -8,9 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { CartActions } from "../../../Store/cartSlice";
 import { useDispatch } from "react-redux";
-// import { FaMinus, FaPlus } from "react-icons/fa";
 import { GiShoppingCart } from "react-icons/gi";
-// import Typography from "@mui/material/Typography";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -36,11 +34,14 @@ const ProductItem = ({ id, name, cover, price, discount, desc, quantity }) => {
   const addToCart = () => {
     dispatch(CartActions.addToCart({ id, name, cover, price }));
     setOpen(false);
-    message.success("Device added to Cart");
+    message.success(`${name} added to Cart`);
   };
 
   return (
-    <div className="relative pt-2 pb-1 bg-white hover:shadow-lg rounded-2xl" data-aos="fade-up">
+    <div
+      className="relative pt-2 pb-1 bg-white hover:shadow-lg rounded-2xl"
+      data-aos="fade-up"
+    >
       <div onClick={handleClickOpen}>
         <img
           src={`/images/${cover}`}
@@ -59,7 +60,7 @@ const ProductItem = ({ id, name, cover, price, discount, desc, quantity }) => {
           </button>
           <Typography.Paragraph className="flex flex-col items-center justify-between gap-y-2 sm:flex-row">
             <Typography.Text className="font-bold">
-              GH₵ {price.toLocaleString()}
+              GH₵: {price.toLocaleString()}
               <Typography.Text
                 delete
                 type="danger"
@@ -103,20 +104,8 @@ const ProductItem = ({ id, name, cover, price, discount, desc, quantity }) => {
               <h1 className="text-lg font-semibold">{name}</h1>
               <p className="text-sm">{desc}</p>
               <h1 className="pt-4 pb-2 text-xl font-bold border-b-2">
-                Price: GH₵: {price.toLocaleString()}.00
+                Price: GH₵ {price.toLocaleString()}
               </h1>
-              {/* <div className="flex items-center gap-2 py-2">
-                <h6>Qty:</h6>
-                <div className="flex items-center gap-4 p-2 rounded-lg">
-                  <button className="p-1 text-lg border-2 cursor-pointer ">
-                    <FaPlus />
-                  </button>
-                  <button className="font-bold ">{quantity}</button>
-                  <button className="p-1 text-lg border-2 cursor-pointer ">
-                    <FaMinus />
-                  </button>
-                </div>
-              </div> */}
               <Button
                 onClick={addToCart}
                 type="primary"

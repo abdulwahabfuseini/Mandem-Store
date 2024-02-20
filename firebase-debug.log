@@ -1,0 +1,44 @@
+[debug] [2024-02-20T00:04:09.327Z] ----------------------------------------------------------------------
+[debug] [2024-02-20T00:04:09.334Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-20T00:04:09.336Z] CLI Version:   12.6.1
+[debug] [2024-02-20T00:04:09.337Z] Platform:      win32
+[debug] [2024-02-20T00:04:09.338Z] Node Version:  v18.18.0
+[debug] [2024-02-20T00:04:09.341Z] Time:          Tue Feb 20 2024 00:04:09 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-02-20T00:04:09.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-20T00:04:09.350Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-20T00:04:09.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-20T00:04:09.560Z] > authorizing via signed-in user (abdulwahabfuseini78@gmail.com)
+[debug] [2024-02-20T00:04:09.560Z] [iam] checking project mandem-store-24ff1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-20T00:04:09.561Z] > refreshing access token with scopes: []
+[debug] [2024-02-20T00:04:09.563Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-20T00:04:09.563Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-20T00:04:09.576Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2024-02-20T00:04:09.579Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-02-20T00:04:09.580Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------330055558974319832473368","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-02-20T00:04:09.580Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-02-20T00:04:09.581Z] > refreshing access token with scopes: []
+[debug] [2024-02-20T00:04:09.581Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-20T00:04:09.582Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-20T00:04:09.594Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------420895648171628140745047","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-02-20T00:04:09.594Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-02-20T00:04:09.603Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\apiv2.js:149:22)
+    at async Client.addAuthHeader (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\getDefaultHostingSite.js:10:21)
+    at async requireHostingSite (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\FUSEINI ABDUL WAHAB\.npm-global\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+[error] 
+[error] Error: Failed to get Firebase project mandem-store-24ff1. Please make sure the project exists and your account has permission to access it.
